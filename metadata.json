@@ -1,0 +1,6 @@
+{
+  "name": "DramaTime",
+  "description": "App de streaming de dramas",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
