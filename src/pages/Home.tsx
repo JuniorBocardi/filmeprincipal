@@ -7,6 +7,7 @@ import {
   Play,
   Plus,
   Check,
+  Loader2,
 } from "lucide-react";
 import { useAuth } from "../contexts/AuthContext";
 import { cn } from "../lib/utils";
@@ -131,6 +132,14 @@ export default function Home() {
       navigate(`/watch/${movieId}`);
     }
   };
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-neutral-950 flex items-center justify-center">
+        <Loader2 className="w-10 h-10 text-purple-500 animate-spin" />
+      </div>
+    );
+  }
 
   return (
     <motion.div
